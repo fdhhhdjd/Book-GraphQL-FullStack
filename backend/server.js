@@ -3,7 +3,8 @@ const { ApolloServer } = require("apollo-server-express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config({ path: ".env" });
-const mongoDataMethods = require("./configs/db");
+const mongoDataMethods = require("./controllers/BookCtl");
+const connectDB = require("./configs/db");
 // Load schema & resolvers
 const typeDefs = require("./schemas/schema");
 const resolvers = require("./resolvers/resolver");
@@ -14,7 +15,7 @@ const server = new ApolloServer({
   context: () => ({ mongoDataMethods }),
 });
 //Connect MongoDb
-mongoDataMethods();
+connectDB();
 
 const app = express();
 app.use(cors());
