@@ -1,5 +1,3 @@
-## Note : Đang Code xin chờ ^-^
-
 # BackEnd Code By: Nguyễn Tiến Tài
 
 ## WebSite: ( hiện tại chưa có ^_^ )
