@@ -22,7 +22,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   return res.status(200).json({
     status: "200",
-    message: "WellCome To Tai Heo ^-^.",
+    message: "WellCome To Tai Heo ^-^ !!",
   });
 });
 server.start().then(() => {
